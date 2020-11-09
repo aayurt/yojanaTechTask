@@ -65,6 +65,7 @@ class EmployeeController extends Controller
             $employee->gender = $request->gender;
             $employee->salary = $request->salary;
             $employee->designation = $request->designation;
+            $employee->imported_by = Auth::id();
              if ($request->hasFile('image')) {
             if ($request->file('image')->isValid()) {
                 //
