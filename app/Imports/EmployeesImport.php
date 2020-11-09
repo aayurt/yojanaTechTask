@@ -48,8 +48,8 @@ class EmployeesImport implements ToModel,WithHeadingRow,SkipsOnError,withValidat
             'salary'=> 'required|numeric:employees,salary',
             'full_name'=>'required|unique:employees,full_name',
             'date_of_birth'=>'required|date',
-            'gender'=>'required|unique:employees,gender',
-            'designation'=>'required|unique:employees,designation',
+            'gender'=>'required',
+            'designation'=>'required',
         ];
     }
 /* VALIDATION ERROR IF USED NON FORMATABLE */
